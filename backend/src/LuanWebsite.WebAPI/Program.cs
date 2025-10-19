@@ -1,4 +1,5 @@
 using LuanWebsite.WebAPI.Data;
+using LuanWebsite.WebAPI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +12,10 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
         throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-builder.Services.AddDbContext<WebsiteContext>(options =>
+builder.Services.AddDbContext<WebsiteDbContext>(options =>
     options.UseSqlite(connectionString));
+
+builder.Services.AddScoped<IArticleService, ArticleService>();
 
 var app = builder.Build();
 

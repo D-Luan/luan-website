@@ -1,6 +1,6 @@
-﻿namespace LuanWebsite.WebAPI.Models;
+﻿namespace LuanWebsite.WebAPI.Dtos;
 
-public class Article
+public class ArticleResponseDto
 {
     public int Id { get; set; }
 
