@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LuanWebsite.WebAPI.Migrations
 {
-    [DbContext(typeof(WebsiteContext))]
+    [DbContext(typeof(WebsiteDbContext))]
     [Migration("20251019135937_InitialCreate")]
     partial class InitialCreate
     {
