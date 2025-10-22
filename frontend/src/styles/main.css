@@ -1,0 +1,77 @@
+/* Global Reset & Base Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Styles */
+
+.main-header {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.main-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+
+.hero-intro {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.hero-intro h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hero-intro p {
+    font-size: 1.1rem;
+    color: #555;
+}
