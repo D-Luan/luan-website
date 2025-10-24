@@ -129,8 +129,8 @@ img {
 }
 
 .hero-image {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 2px;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -160,8 +160,26 @@ img {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.1s ease, transform 0.1s ease;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    
+    transition: transform 0.1s ease, 
+                box-shadow 0.1s ease,
+                background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.hero-button:active {
+    transform: translateY(1px);
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
 }
 
 /*
@@ -248,4 +266,12 @@ img {
         height: 80px;
         width: auto;
     }
+}
+
+/*
+    Stack Section (Mobile First)
+*/
+
+.recent-articles {
+    display: flex;
 }
