@@ -24,7 +24,8 @@ public class ArticleService : IArticleService
                 Content = r.Content,
                 Category = r.Category,
                 CreatedDate = r.CreatedDate,
-                ProjectLink = r.ProjectLink
+                ProjectLink = r.ProjectLink,
+                ImageUrl = r.ImageUrl
             })
             .ToListAsync();
 
@@ -42,7 +43,8 @@ public class ArticleService : IArticleService
                 Content = r.Content,
                 Category = r.Category,
                 CreatedDate = r.CreatedDate,
-                ProjectLink = r.ProjectLink
+                ProjectLink = r.ProjectLink,
+                ImageUrl = r.ImageUrl
             })
             .SingleOrDefaultAsync();
 

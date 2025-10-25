@@ -3,6 +3,7 @@ using System;
 using LuanWebsite.WebAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LuanWebsite.WebAPI.Migrations
 {
     [DbContext(typeof(WebsiteDbContext))]
-    partial class WebsiteContextModelSnapshot : ModelSnapshot
+    [Migration("20251025043452_UpdateArticleSeedDataWithImages")]
+    partial class UpdateArticleSeedDataWithImages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.10");
@@ -55,7 +58,7 @@ namespace LuanWebsite.WebAPI.Migrations
                             Category = "Programação",
                             Content = "Este é o conteúdo completo do meu primeiro artigo...",
                             CreatedDate = new DateTime(2025, 10, 19, 0, 0, 0, 0, DateTimeKind.Utc),
-                            ImageUrl = "assets/images/computacao.jpg",
+                            ImageUrl = "/assets/images/computacao.jpg",
                             Title = "Meu Primeiro Artigo de Teste"
                         },
                         new
@@ -64,7 +67,7 @@ namespace LuanWebsite.WebAPI.Migrations
                             Category = "Frontend JavaScript",
                             Content = "JavaScript puro é a base de tudo no frontend...",
                             CreatedDate = new DateTime(2025, 10, 19, 0, 0, 0, 0, DateTimeKind.Utc),
-                            ImageUrl = "assets/images/articlejst.jpg",
+                            ImageUrl = "/assets/images/articlejst.jpg",
                             ProjectLink = "https://github.com/D-Luan/documentation-manager",
                             Title = "Aprendendo JavaScript Puro"
                         });

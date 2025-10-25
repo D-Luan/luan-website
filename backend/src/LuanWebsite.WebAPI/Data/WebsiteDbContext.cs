@@ -26,7 +26,8 @@ public class WebsiteDbContext : DbContext
                 Content = "Este é o conteúdo completo do meu primeiro artigo...",
                 Category = "Programação",
                 CreatedDate = new DateTime(2025, 10, 19, 0, 0, 0, DateTimeKind.Utc),
-                ProjectLink = null
+                ProjectLink = null,
+                ImageUrl = "assets/images/computacao.jpg"
             },
             new Article
             {
@@ -35,7 +36,8 @@ public class WebsiteDbContext : DbContext
                 Content = "JavaScript puro é a base de tudo no frontend...",
                 Category = "Frontend JavaScript",
                 CreatedDate = new DateTime(2025, 10, 19, 0, 0, 0, DateTimeKind.Utc),
-                ProjectLink = "https://github.com/D-Luan/documentation-manager"
+                ProjectLink = "https://github.com/D-Luan/documentation-manager",
+                ImageUrl = "assets/images/articlejst.jpg"
             });
     }
 }

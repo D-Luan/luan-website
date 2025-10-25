@@ -13,4 +13,6 @@ public class ArticleResponseDto
     public DateTime CreatedDate { get; set; }
 
     public string? ProjectLink { get; set; }
+
+    public string? ImageUrl { get; set; }
 }
